@@ -1,103 +1,113 @@
-# Jekyll Serif Theme
+# Automatic App Landing Page
+**Create and deploy an iOS app landing page on GitHub Pages in only five minutes.**
 
-Serif is a modern business theme for Jekyll. It contains multiple content types for a typical brochure/marketing website. The theme is fully responsive, blazing fast and artfully illustrated.
+Designed for GitHub Pages for super easy set up. 
 
-[Live Demo](https://jekyll-serif.netlify.app/) |
-[Zerostatic Themes](https://www.zerostatic.io)
+🔧 Fork this repo
 
-<a href="https://www.buymeacoffee.com/zerostatic" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+🗝 Enter iOS App ID in `_config.yml`
 
-![Jekyll Serif Theme screenshot](https://www.zerostatic.io/theme/jekyll-serif/jekyll-serif-screenshot.png)
+📲 Upload video preview or screenshot
 
-### Theme features
+🎨 Customise site in `_config.yml` (no HTML/CSS)
 
-- Jekyll 4.2+
-- Netlify & Github Pages ready
-- Services (Collection)
-- Team (Collection)
-- Features (Data)
-- SCSS
-- 100% Responsive design, animated hamburger and mobile slide in menu
-- Bootstrap 4.6 - _Only the bootstrap grid and utilites are imported by default. If you want to use more of the Boostrap library you can uncomment the `@import` in `style.scss`_
-- 100/100 Google Lighthouse speed score
-- 100/100 Google Lighthouse seo score
-- 100/100 Google Lighthouse accessibility score
-- 100/100 Google Lighthouse best practices score
-- Under 50KB without images or 80KB with images and illustrations ⚡
-- Under 20KB without Google fonts ⚡⚡⚡
-- Robust example content included
-- Royalty free illustrations included
+📝 Write Privacy Policy as markdown in `privacypolicy.md`
 
-## Installation
+🕒 Keep a changelog in `CHANGELOG.md`
 
-### Installing Ruby & Jekyll
+✅ Site becomes live at GitHub Pages repository URL, e.g. `https://your-username.github.io/your-repo-name/`.
 
-If this is your first time using Jekyll, please follow the [Jekyll docs](https://jekyllrb.com/docs/installation/) and make sure your local environment (including Ruby) is setup correctly.
+<img src="https://emilbaehr.com/files/jayson1.png" width="440"> <img src="https://emilbaehr.com/files/slor1.png" width="440">
 
-### Installing Theme
 
-Download or clone the theme.
 
-To run the theme locally, navigate to the theme directory and run:
 
-```
-bundle install
-```
+## Quick Start
 
-To start the Jekyll local development server.
+### Step 1: Fork this repo.
+After forking the repo, your site will be live immediately on your personal Github Pages account, e.g. `https://yourusername.github.io/your-repo-name/`.
 
-```
-bundle exec jekyll serve
-```
+*Make sure GitHub Pages is enabled for your repo. It might take some time for the site to propagate entirely.*
 
-To build the theme.
 
-```
-bundle exec jekyll build
-```
 
-## Deployment
+### Step 2: Enter iOS App ID in `_config.yml`
+Enter your iOS app ID in the `ios_app_id` field and commit your changes. Your site will automatically rebuild with your app icon, name, price and link to App Store.
 
-### Netlify
+You can go on with customising almost anything in the `_config.yml` file. 
 
-Use Netlify to deploy this theme. This theme contains a valid and tested `netlify.toml` - Feel free to use the 1-click deploy below.
+Things you can customise in `_config.yml`:
+- App Name
+- App Icon
+- App Description
+- App Price
+- App Store Link
+- Play Store Link
+- Press Kit Download Link
+- Cover Image
+- Cover Overlay Color
+- Background Color
+- Text Colors
+- iPhone Device Color
+- Your Name / Company Name
+- Link to Website
+- Social Links and Contact Info
+- Feature List (Title, text, icon)
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zerostaticthemes/jekyll-serif-theme)
 
-### Github Pages
 
-This theme has been tested to work with Github Pages (and Github Project Pages). When using Github Pages you will need to update the `baseurl` in the `_config.yml` otherwise all the css, images and paths will be broken.
+### Step 3: Add screenshot or video
 
-For example the site https://zerostaticthemes.github.io/jekyll-serif-theme would have `baseurl: "/jekyll-serif-theme/"`
+#### Adding a screenshot
+Upload a `.png` or `.jpg` of your app to the folder `assets/screenshot/`. The name does not matter. Be sure to delete the placeholder `yourscreenshot.png`.
 
-## Extras
+#### Adding video
+Upload your video to the folder `assets/videos/`. To have support for most browsers, you need to upload two files – one for Safari and one for Chrome/Firefox.
 
-### License
+Video formats supported by Chrome and Firefox:
+- `.webm`
+- `.ogg`
 
-- You cannot create ports of this theme
-- You cannot re-sell this theme
+Video formats supported by Safari:
+- `.mp4`
+- `.mov`
 
-### Credits
+#### Resolutions
+The videos and screenshots must have one of the following resolutions:
+- 828x1792
+- 1125x2436
+- 1242x2688
 
-- Beautiful royalty free Illustrations by Icons8 - https://icons8.com/illustrations/style--pixeltrue
-- Stock images by Unsplash - https://unsplash.com/
-- Feature icons by Noun Project - https://thenounproject.com/
 
-## Support My Work
 
-I've been building open source themes for all the main static site generators for over 4 years now. My premium themes allow me to continue to allocate time to maintain, improve and build new open source themes.
+### Step 4: Edit (or remove) Privacy Policy and Changelog
+Your site automatically includes pages for a Privacy Policy and a Changelog. Change the content of these pages by editing the `privacypolicy.md` and `CHANGELOG.md` files in the `_pages` directory.
 
-1. Leave a star ⭐🙏🏻
-2. Make a contribution to this theme, add a feature, fix a bug, nothing is to small 
-2. Mention this theme on twitter [@zerostaticio](https://twitter.com/zerostaticio) 📢
-3. Purchase a premium theme 🔥
+In each of the markdown files, you can set the `include_in_header:` value to either `true` or `false`. This determines if the page is included in the top navigation.
+By default, only the Changelog is included in the top navigation. The title of the navigation item can also be edited, by editing the `title:` in each markdown file.
 
-### All Jekyll Themes by Zerostatic
+If you need to, you can create additional markdown based pages just by creating an `.md` file like the `privacypolicy.md` and `CHANGELOG.md` files in the `_pages` directory.
 
-- [Jekyll Serif (Open Source)](https://www.zerostatic.io/theme/jekyll-serif/)
-- [Jekyll Atlantic (Open Source)](https://www.zerostatic.io/theme/jekyll-atlantic/)
-- [Jekyll Advance (Premium)](https://www.zerostatic.io/theme/jekyll-advance/)
-- [Jekyll Origin (Premium)](https://www.zerostatic.io/theme/jekyll-origin/)
-- [Jekyll Curate (Premium)](https://www.zerostatic.io/theme/jekyll-curate/)
+**Please note:** The Privacy Policy and Changelog provided are written using dummy text, so please adapt each of them for your own app.
+You can also choose not to include these pages, by simple deleting the `privacypolicy.md` and `CHANGELOG.md` files.
 
-🇦🇺 **Made in Australia** by Robert Austin
+
+
+
+## Feedback
+If you have feedback regarding bugs or improvements, open an issue, @ me on Twitter or write me an email. You can find my contact info on my website.
+
+I'd love to see the sites you create using this little tool.
+
+## Credits
+- [Jekyll](https://github.com/jekyll/jekyll)
+- [FontAwesome](https://fontawesome.github.io/Font-Awesome/)
+
+## Donations
+[Donations are welcome](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=S8ZZT3JXJPN92&currency_code=USD&source=url)
+
+## Author
+[Emil Baehr](https://emilbaehr.com/)
+
+## License
+[MIT License](LICENSE)
