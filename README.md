@@ -124,7 +124,7 @@ The generated sitemap of your blog can be found at <https://yourgithubusername.g
 
 ## Troubleshooting
 
-There might be instances where your site based on Reverie won't have the styling working as expected. 
+There might be instances where your site based on Reverie won't have the styling working as expected.
 
 The common reason for this issue is the incorrect `baseurl` set in the `_config.yml` file. You need to use the `baseurl` according to where you're hosting it.
 
@@ -137,9 +137,22 @@ Reverie is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if
 
 ## The name?
 
-reverie - _a state of being pleasantly lost in one's thoughts; a daydream._<br><sup>/ˈrɛv(ə)ri/</sup> 
+reverie - _a state of being pleasantly lost in one's thoughts; a daydream._<br><sup>/ˈrɛv(ə)ri/</sup>
 
 
 ## License
 
 MIT
+
+## Run Locally
+Open Terminal.
+
+Run the Jekyll Server
+```
+docker run --rm --name jekyll --network ${NETWORK_NAME} -v ${HOST_WORKING_DIR}/git/admincoai.github.io:/usr/src/app -it starefossen/github-pages
+```
+
+Navigate the browser to the home page
+```
+http://jekyll:4000
+```
